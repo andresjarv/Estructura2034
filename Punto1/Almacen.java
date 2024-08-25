@@ -72,11 +72,11 @@ public class Almacen{
                 if(datoAlmacen[i][j].getNombre() == buscarNombre){
                     System.out.println("Valor encontrador en la posicion: ["+i+"]["+j+"]");
                     encontrado = true;
-                    break;
+                    
                 }
                 
             }
-            if(encontrado)break;
+            
         }
         if (!encontrado){
             System.out.println("Producto no esta en la matriz.");

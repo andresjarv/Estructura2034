@@ -7,7 +7,7 @@ public class Main {
         Scanner leer = new Scanner(System.in);
         boolean flag = true;
         int cantidad = 0, opc;
-        String nombreBuscar;
+        //String nombreBuscar;
         System.out.println("ingrese el tamano de la matriz objeto: ");
         cantidad = leer.nextInt();
 
@@ -25,7 +25,7 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("Buscar un dato por el nombre: ");
-                    nombreBuscar = leer.nextLine();
+                    String nombreBuscar = leer.next();
                     almacen.BuscarDato(nombreBuscar, datoAlmacen);
                     break;
                 case 4:
