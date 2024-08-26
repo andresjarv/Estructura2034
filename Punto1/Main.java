@@ -30,6 +30,7 @@ public class Main {
                     break;
                 case 4:
                     flag = false;
+                    break;
                 default:
                     System.out.println("Opcion no es valida ");
                     break;

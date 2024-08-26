@@ -57,9 +57,9 @@ public class Almacen{
     public void mostrarMatrizObjetual(Almacen[][] datoAlmacen){
         for (int i = 0; i < datoAlmacen.length; i++) {
             for (int j = 0; j < datoAlmacen.length; j++) {
-                System.out.print("--"+ datoAlmacen[i][j].getNombre());
-                System.out.print("--"+ datoAlmacen[i][j].getPrecio());
-                System.out.print("--"+ datoAlmacen[i][j].getCantidad());
+                System.out.print("[ "+ datoAlmacen[i][j].getNombre());
+                System.out.print(" - "+ datoAlmacen[i][j].getPrecio());
+                System.out.print(" - "+ datoAlmacen[i][j].getCantidad()+" ]");
             }
             System.out.println(" ");            
         }
@@ -69,13 +69,14 @@ public class Almacen{
         boolean encontrado = false;
         for (int i = 0; i < datoAlmacen.length; i++) {
             for (int j = 0; j < datoAlmacen.length; j++) {
-                if(datoAlmacen[i][j].getNombre() == buscarNombre){
+                if(datoAlmacen[i][j].getNombre().equals(buscarNombre)){
                     System.out.println("Valor encontrador en la posicion: ["+i+"]["+j+"]");
                     encontrado = true;
-                    
+                    break;
                 }
                 
             }
+            if (encontrado) break;
             
         }
         if (!encontrado){
