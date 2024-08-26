@@ -84,4 +84,17 @@ public class Almacen{
         }
     }
 
+    public int InventarioTotal(Almacen[][] datoAlmacen){
+        int contador = 0;
+        for (int i = 0; i < datoAlmacen.length; i++) {
+            for (int j = 0; j < datoAlmacen.length; j++) {
+                if(datoAlmacen[i][j].getCantidad() != 0){
+                    contador += datoAlmacen[i][j].getCantidad();
+                }
+            }
+        }
+
+        return contador;
+    }
+
 }

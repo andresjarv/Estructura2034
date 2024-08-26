@@ -14,7 +14,7 @@ public class Main {
         Almacen[][] datoAlmacen = new Almacen[cantidad][cantidad];
         while (flag) {
             System.out.println(
-                    "--Opcion a realizar--\n1.Llenar Matriz Objetual.\n2.Mostrar matriz de objetos.\n3.Buscar un dato por el nombre.\n4.Salir");
+                    "--Opcion a realizar--\n1.Llenar Matriz Objetual.\n2.Mostrar matriz de objetos.\n3.Buscar un dato por el nombre.\n4.Inventario.\n5.Salir.");
             opc = leer.nextInt();
             switch (opc) {
                 case 1:
@@ -29,6 +29,10 @@ public class Main {
                     almacen.BuscarDato(nombreBuscar, datoAlmacen);
                     break;
                 case 4:
+                    int total = almacen.InventarioTotal(datoAlmacen);
+                    System.out.println("El total de inventario es: "+total);
+                    break;
+                case 5:
                     flag = false;
                     break;
                 default:
