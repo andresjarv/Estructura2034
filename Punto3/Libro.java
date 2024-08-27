@@ -54,4 +54,22 @@ public class Libro{
         }
     }
 
+    public String LibroMasCaro(Libro[][] datoLibro){
+        double mayor = datoLibro[0][0].getPrecio();
+        String msj;
+        for (int i = 0; i < datoLibro.length; i++) {
+            for (int j = 0; j < datoLibro.length; j++) {
+                if(datoLibro[i][j].getPrecio() > mayor){
+                    mayor = datoLibro[i][j].getPrecio();
+                    msj = "El dato mayor es: "+datoLibro[i][j].precio+"De la posicion: "+datoLibro[i][j].titulo+ 
+                    datoLibro[i][j].autor;
+                    break;
+                }
+                
+            }
+        }
+        
+        return msj;
+    }
+
 }
