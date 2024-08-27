@@ -61,7 +61,7 @@ public class Libro{
             for (int j = 0; j < datoLibro.length; j++) {
                 if(datoLibro[i][j].getPrecio() > mayor){
                     mayor = datoLibro[i][j].getPrecio();
-                    msj = "El dato mayor es: "+datoLibro[i][j].precio+"De la posicion: "+datoLibro[i][j].titulo+ 
+                    msj = "El dato mayor es: "+datoLibro[i][j].precio+"Titulo: "+datoLibro[i][j].titulo+"Autor: "+ 
                     datoLibro[i][j].autor;
                     break;
                 }
