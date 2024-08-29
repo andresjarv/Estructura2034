@@ -1,4 +1,5 @@
 package PUNTOS;
+
 import java.util.*;
 
 // 4)	Problema: Dada una matriz que representa un teatro, donde cada celda contiene un objeto Asiento 
@@ -8,7 +9,8 @@ public class Punto4 {
     int numero;
     int fila;
     double precio;
-    Scanner leer = new Scanner(System.in)
+    Scanner leer = new Scanner(System.in);
+    
     
     public int getNumero() {
         return numero;
@@ -47,8 +49,20 @@ public class Punto4 {
         return matrizTeatro;
     }
 
-    public Punto4[][] ordenarAscendente(matrizTeatro[][]){
-        return matrizOrdenadaAs;
-    }
+     public Punto4[][] ordenarAscendente(Punto4 matrizTeatro[][]){
+        Punto4[][] MatrizOrdenadaAs = matrizTeatro;
+         for (int i = 0; i < matrizTeatro.length; i++) {
+            for (int j = 0; j < matrizTeatro.length; j++) {
+                if (matrizTeatro[i][j].getPrecio() < matrizTeatro[i][j].getPrecio()+1){
+                    Punto4[][] matrizTemporal = matrizTeatro;
+                    MatrizOrdenadaAs[i][j] = matrizTemporal;
+                       
+                }
+                    
+            }
+           
+         }
+         return matrizOrdenadaAs();
+     }
     
 }
