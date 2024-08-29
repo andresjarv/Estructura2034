@@ -8,7 +8,7 @@ public class Menu {
         System.out.println("ingrese el tamano de la matriz objeto: ");
         cantidad = leer.nextInt();
 
-        //Datos para probar
+     S   //Datos para probar
     }
     
 }
