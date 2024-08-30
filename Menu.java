@@ -24,14 +24,14 @@ public class Menu {
             }
         }
 
-        matriz.sort(teatroMatriz.getPrecio);
+       Punto4[][] teatroMatrizOrd = teatro.ordenarAscendente(teatroMatriz);
 
-        for (int i = 0; i < teatroMatriz.length; i++) {
-            for (int j = 0; j < teatroMatriz.length; j++) {
+        for (int i = 0; i < teatroMatrizOrd.length; i++) {
+            for (int j = 0; j < teatroMatrizOrd.length; j++) {
                 System.out.println("MATRIZ ORDENADA POR PRECIO");
-                System.out.print("[ "+ teatroMatriz[i][j].getFila());
-                System.out.print(" - "+ teatroMatriz[i][j].getNumero());
-                System.out.print(" - "+ teatroMatriz[i][j].getPrecio()+" ]");
+                System.out.print("[ "+ teatroMatrizOrd[i][j].getFila());
+                System.out.print(" - "+ teatroMatrizOrd[i][j].getNumero());
+                System.out.print(" - "+ teatroMatrizOrd[i][j].getPrecio()+" ]");
             }
         }
     }
