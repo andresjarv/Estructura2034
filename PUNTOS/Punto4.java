@@ -50,19 +50,19 @@ public class Punto4 {
     }
 
      public Punto4[][] ordenarAscendente(Punto4 matrizTeatro[][]){
-        Punto4[][] MatrizOrdenadaAs = matrizTeatro;
+        Punto4[][] MatrizOrdenadaAs = {};
          for (int i = 0; i < matrizTeatro.length; i++) {
             for (int j = 0; j < matrizTeatro.length; j++) {
                 if (matrizTeatro[i][j].getPrecio() < matrizTeatro[i][j].getPrecio()+1){
                     Punto4[][] matrizTemporal = matrizTeatro;
-                    MatrizOrdenadaAs[i][j] = matrizTemporal;
+                    MatrizOrdenadaAs[i][j] = matrizTemporal[i][j];
                        
                 }
                     
             }
            
          }
-         return matrizOrdenadaAs();
+         return MatrizOrdenadaAs;
      }
     
 }

@@ -27,7 +27,6 @@ public class Menu {
 
                     break;
                 case 4:
-
                     break;
                 case 5:
 
@@ -69,6 +68,7 @@ public class Menu {
                 default:
                     System.out.println("Opcion no es valida ");
                     break;
+
             }
         }
 
