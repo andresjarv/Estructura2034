@@ -7,14 +7,13 @@ public class Menu {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         int cantidad = 0;
-        System.out.println("ingrese el tamano de la matriz objeto: ");
+        System.out.println("ingrese el tamaño de la matriz objeto: ");
         cantidad = leer.nextInt();
         boolean flag = true;
         int opc = 0;
 
         while (flag) {
-            System.out.println(
-                    "--Opcion a realizar--\n1.Llenar Matriz Objetual.\n2.Mostrar matriz de objetos.\n3.Buscar un dato por el nombre.\n4.Inventario.\n21.Salir.");
+            System.out.println("Digite el punto que desea verificar: ");
             opc = leer.nextInt();
             switch (opc) {
                 case 1:
