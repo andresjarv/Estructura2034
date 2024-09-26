@@ -34,7 +34,7 @@ public class Punto8 {
         for (int i = 0; i < agr.length; i++) {
             for (int j = 0; j < agr.length; j++) {
                 if(agr[i][j].getCategoria().equals(agr[i][j].getCategoria()+1)){
-                    agrAux[i][j].setCategoria() = agr[i][j].getCategoria();
+                    agrAux[i][j].setCategoria(agr[i][j].getCategoria());
                     System.out.print("[ "+ agr[i][j].getNombre());
                     System.out.print(" - "+ agr[i][j].getPrecio());
                     System.out.print(" - "+ agr[i][j].getPeso()+" ]");
